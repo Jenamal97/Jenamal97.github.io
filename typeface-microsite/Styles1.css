@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Misu';
+  src: url('./fonts/misu.woff2') format('woff2'); /* .ttf 쓸 경우도 가능 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fefcf9;
+  color: #222;
+  font-family: 'Misu', serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  padding: 4rem 2rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.5s; }
+.delay-2 { animation-delay: 1s; }
+.delay-3 { animation-delay: 1.5s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
