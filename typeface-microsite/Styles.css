@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Misu';
-  src: url('./fonts/misu.woff2') format('woff2'); /* .ttf 쓸 경우도 가능 */
+  src: url('./fonts/misu.woff2') format('woff2');
 }
 
 body {
@@ -30,4 +30,3 @@ body {
     transform: translateY(0);
   }
 }
-
