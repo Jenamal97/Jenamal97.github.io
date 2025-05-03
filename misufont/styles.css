@@ -1,191 +1,96 @@
 /* 기본 스타일 */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
 .menu-container {
-  width: 100%;
-  max-width: 700px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  border: 2px solid #ddd;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #ddd;
 }
 
 .menu-header {
-  text-align: center;
-  margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .menu-header h1 {
-  font-size: 2.5em;
-  color: #ff6347;  /* 시그니처 오렌지 색 */
-  margin: 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+    font-size: 2.5em;
+    color: #ff6347;  /* 시그니처 오렌지 색 */
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /* 메뉴 아이템 스타일 */
 .menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .menu-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border: 2px solid #ff6347;  /* 오렌지 색 테두리 */
-  border-radius: 12px;
-  height: 100px;
-  padding: 20px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.menu-item:hover {
-  transform: scale(1.05); /* hover 시 메뉴 항목 확대 */
-  background-color: #ff6347; /* hover 시 배경색 오렌지 */
-  color: white; /* hover 시 텍스트 색 하얀색 */
-}
-
-.item-content {
-  text-align: center;
-}
-
-.menu-item h2 {
-  font-size: 1.8em;
-  color: #333;
-  margin: 0;
-}
-
-.menu-description {
-  font-size: 1.1em;
-  color: #777;
-}
-
-.menu-price {
-  font-size: 1.5em;
-  color: #ff6347;
-  font-weight: bold;
-}
-
-/* 모바일에서 메뉴 항목 간격 조정 */
-@media (max-width: 600px) {
-  .menu-item {
-      height: 80px;
-      padding: 10px;
-  }
-
-  .menu-item h2 {
-      font-size: 1.5em;
-  }
-}
-/* 기본 스타일 */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-.menu-container {
-  width: 100%;
-  max-width: 700px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  border: 2px solid #ddd;
-}
-
-.menu-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.menu-header h1 {
-  font-size: 2.5em;
-  color: #ff6347;  /* 시그니처 오렌지 색 */
-  margin: 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-/* 메뉴 아이템 스타일 */
-.menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.menu-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border: 2px solid #ff6347;  /* 오렌지 색 테두리 */
-  border-radius: 12px;
-  height: 100px;
-  padding: 20px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #ff6347;  /* 오렌지 색 테두리 */
+    border-radius: 12px;
+    height: 100px;
+    padding: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
 /* hover 효과 */
 .menu-item:hover {
-  transform: scale(1.05); /* hover 시 메뉴 항목 확대 */
-  background-color: #ff6347; /* hover 시 배경색 오렌지 */
-  color: white; /* hover 시 텍스트 색 하얀색 */
+    transform: scale(1.05); /* hover 시 메뉴 항목 확대 */
+    background-color: #ff6347; /* hover 시 배경색 오렌지 */
+    color: white; /* hover 시 텍스트 색 하얀색 */
 }
 
 .item-content {
-  text-align: center;
+    text-align: center;
 }
 
 .menu-item h2 {
-  font-size: 1.8em;
-  color: #333;
-  margin: 0;
+    font-size: 1.8em;
+    color: #333;
+    margin: 0;
 }
 
 .menu-description {
-  font-size: 1.1em;
-  color: #777;
+    font-size: 1.1em;
+    color: #777;
 }
 
 .menu-price {
-  font-size: 1.5em;
-  color: #ff6347;
-  font-weight: bold;
+    font-size: 1.5em;
+    color: #ff6347;
+    font-weight: bold;
 }
 
 /* 모바일에서 메뉴 항목 간격 조정 */
 @media (max-width: 600px) {
-  .menu-item {
-      height: 80px;
-      padding: 10px;
-  }
+    .menu-item {
+        height: 80px;
+        padding: 10px;
+    }
 
-  .menu-item h2 {
-      font-size: 1.5em;
-  }
+    .menu-item h2 {
+        font-size: 1.5em;
+    }
 }
